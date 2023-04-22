@@ -5,12 +5,9 @@ void main() {
 }
 
 void test() {
-  final name = 'foo';
-  if (name == 'foo'){
-    print('yes');
-  } else {
-    print('not foo');
-  }
+  final name ='foo';
+  final nameTimes20 = name * 20;
+  print(nameTimes20);
 }
 
 class MyApp extends StatelessWidget {
