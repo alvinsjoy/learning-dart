@@ -5,9 +5,9 @@ void main() {
 }
 
 void test() {
-  final name ='foo';
-  final nameTimes20 = name * 20;
-  print(nameTimes20);
+  var name = ['foo','bar','lol'];
+  name.add('Hi');
+  print(name.length);
 }
 
 class MyApp extends StatelessWidget {
