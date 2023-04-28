@@ -5,10 +5,14 @@ void main() {
 }
 
 void test() {
-  var name = ['foo','bar','lol','hi'];
-  name.add('Hi');
-  print(name.length);
-  print(name);
+  var things = {
+    "lol":2,
+    3:"LOL"
+    };
+  print(things);
+  things["lol"] = 232;
+  print(things);
+
 }
 
 class MyApp extends StatelessWidget {
@@ -30,7 +34,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.red,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
