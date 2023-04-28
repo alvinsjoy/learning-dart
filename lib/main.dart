@@ -5,13 +5,10 @@ void main() {
 }
 
 void test() {
-  var things = {
-    "lol":2,
-    3:"LOL"
-    };
-  print(things);
-  things["lol"] = 232;
-  print(things);
+  String? name = null;
+  print(name);
+  name = "lol";
+  print(name);
 
 }
 
