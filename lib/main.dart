@@ -8,7 +8,14 @@ void test() {
   final String? firstName = null;
   final String? middleName = 'bar';
   final String? lastName = 'baz';
-  
+
+  if (firstName != null) {
+    print('first name is not null');
+  } else if (middleName != null) {
+    print('middle name is not null');
+  } else if (lastName != null) {
+    print('last name is not null');
+  }
   }
 
 class MyApp extends StatelessWidget {
