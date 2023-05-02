@@ -5,12 +5,11 @@ void main() {
 }
 
 void test() {
-  String? name = null;
-  print(name);
-  name = "lol";
-  print(name);
-
-}
+  final String? firstName = null;
+  final String? middleName = 'bar';
+  final String? lastName = 'baz';
+  
+  }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
