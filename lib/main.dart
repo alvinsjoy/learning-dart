@@ -5,9 +5,9 @@ void main() {
 }
 
 void test() {
-  final String? firstName = null;
-  final String? middleName = 'bar';
-  final String? lastName = 'baz';
+  const String? firstName = null;
+  const String? middleName = 'bar';
+  const String? lastName = 'baz';
 
   if (firstName != null) {
     print('first name is not null');
