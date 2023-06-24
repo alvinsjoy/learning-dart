@@ -4,18 +4,9 @@ void main() {
   runApp(const MyApp());
 }
 
-void test() {
-  const String? firstName = null;
-  const String? middleName = 'bar';
-  const String? lastName = 'baz';
-
-  if (firstName != null) {
-    print('first name is not null');
-  } else if (middleName != null) {
-    print('middle name is not null');
-  } else if (lastName != null) {
-    print('last name is not null');
-  }
+void test(String? firstName, String? middleName, String? lastName) {
+  String? name = firstName;
+  name ??= lastName;
   }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test();
+    test(null,'Foo','Baz');
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
