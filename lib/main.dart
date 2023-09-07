@@ -3,10 +3,18 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-
-void test(String? firstName, String? middleName, String? lastName) {
-  String? name = firstName;
-  name ??= lastName;
+class Person {
+  void run() {
+    print("running");
+  }
+  void breathe() {
+    print("breathing");
+  }
+}
+void test(){
+  final person = Person();
+  person.run();
+  person.breathe();
   }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +23,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test(null,'Foo','Baz');
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -27,7 +35,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.green,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
