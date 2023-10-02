@@ -15,7 +15,7 @@ void test(){
   final person = Person();
   person.run();
   person.breathe();
-  }
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
